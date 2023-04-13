@@ -8,7 +8,6 @@ test('Prikaz gumba', async()=> {
     const button = await window.waitForSelector('#new_users');
     const text = await button.textContent();
     expect(text).toContain('Posodobi');
-    await window.screenshot({ path: `screenshots/${Date.now()}.png`})
     await window.close();
     await electronApp.close();
 })

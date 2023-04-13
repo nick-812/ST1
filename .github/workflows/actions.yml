@@ -22,8 +22,3 @@ jobs:
       uses: coactions/setup-xvfb@v1
       with:
         run: npx playwright test
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: screenshots
-        path: ./screenshots
